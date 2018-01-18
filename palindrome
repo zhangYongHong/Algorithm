@@ -1,0 +1,15 @@
+	class IS
+	  def self.is_palindrome(word)
+	    if word==word.reverse()  #判断是否回文
+	      puts "#{word} is a palindrome."
+    else
+      puts  "#{word} is not a palindrome."
+    end
+  end
+  end
+
+  word = gets     # 输入字符串
+.	word = word.chomp #去掉"\n"
+.	word.gsub!(/\W/,"") #利用正则，去除非字母字符
+	a = word.downcase  #转换成小写字母
+.	IS.is_palindrome(a.chomp) # 调用判断是否为回文的方法
